@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+@font-face {
+    font-family: 'lato';
+    src: url(./assets/fonts/lato/Lato-Thin.ttf);
+    font-weight: 100;
+}
+
+
+@font-face {
+    font-family: 'lato';
+    src: url(./assets/fonts/lato/Lato-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url(./assets/fonts/lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url(./assets/fonts/lato/Lato-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url(./assets/fonts/lato/Lato-Black.ttf);
+    font-weight: 900;
+}
+
+html {
+    font-family: 'lato';
+    font-weight: 400;
+}
+
+.section-one {
+    margin-top: 80px;
+}
+
+.section-one .section-one-title {
+    font-size: 40px;
+    line-height: 54px;
+    color: #2C2A29;
+    text-align: center;
+}
+
+.section-one .section-one-images {
+    max-width: 790px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.section-one .section-one-images {
+    margin-top: 49px;
+
+}
+
+.section-one .section-one-images .section-one-image {
+    display: flex;
+}
+
+.section-one-image+.section-one-image {
+    margin-left: 32px;
+}
