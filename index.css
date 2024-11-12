@@ -1,41 +1,43 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 
 @font-face {
-    font-family: 'lato';
+    font-family: Lato;
     src: url(./assets/fonts/lato/Lato-Thin.ttf);
     font-weight: 100;
 }
 
 
 @font-face {
-    font-family: 'lato';
+    font-family: Lato;
     src: url(./assets/fonts/lato/Lato-Light.ttf);
     font-weight: 300;
 }
 
 @font-face {
-    font-family: 'lato';
+    font-family: Lato;
     src: url(./assets/fonts/lato/Lato-Regular.ttf);
+    font-weight: 400;
 }
 
 @font-face {
-    font-family: 'lato';
+    font-family: Lato;
     src: url(./assets/fonts/lato/Lato-Bold.ttf);
     font-weight: 700;
 }
 
 @font-face {
-    font-family: 'lato';
+    font-family: Lato;
     src: url(./assets/fonts/lato/Lato-Black.ttf);
     font-weight: 900;
 }
 
-html {
-    font-family: 'lato';
+body {
+    font-family: Lato, serif;
     font-weight: 400;
 }
 
@@ -51,6 +53,7 @@ html {
 }
 
 .section-one .section-one-images {
+    margin-top: 49px;
     max-width: 790px;
     width: 100%;
     margin-left: auto;
@@ -59,15 +62,158 @@ html {
     justify-content: center;
 }
 
-.section-one .section-one-images {
-    margin-top: 49px;
-
+.section-one .section-one-images .section-one-image {
+    flex: 1;
+    display: flex;
 }
 
-.section-one .section-one-images .section-one-image {
-    display: flex;
+.section-one .section-one-images .section-one-image img {
+    width: 100%;
+    object-fit: contain;
 }
 
 .section-one-image+.section-one-image {
     margin-left: 32px;
+}
+
+
+.section-one .section-one-paragraph {
+    margin-top: 49.11px;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    max-width: 810px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.section-two {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.section-two .section-two-item {
+    display: grid;
+    grid-template-columns: repeat(2, 684px);
+    gap: 8px;
+    justify-content: center;
+}
+
+.section-two-item+.section-two-item {
+    margin-top: 8px;
+}
+
+.section-two .section-two-item .item-img {
+    display: flex;
+}
+
+.section-two .section-two-item .item-img img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.section-two .section-two-item .item-text {
+    padding: 0 48.5px 48px;
+    background-color: #F4F0EA;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    color: #1F1F1F;
+}
+
+.section-two .section-two-item .item-text .item-text-title {
+    margin-top: auto;
+    font-size: 64px;
+    line-height: 74px;
+
+}
+
+.section-two .section-two-item .item-text .item-text-sub-title {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 24px;
+
+}
+
+.section-two .section-two-item .item-text .item-text-sub-des {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 8px;
+}
+
+.section-two .section-two-item .item-text .item-text-sub-des.bottom {
+    margin-top: 40px;
+}
+
+@media screen and (max-width:1439px) {
+    .section-one {
+        margin-top: 40px;
+    }
+
+    .section-one .section-one-images {
+        padding-right: 4px;
+        padding-left: 4px;
+        margin-top: 27px;
+    }
+
+    .section-one .section-one-images .section-one-image {
+        padding-right: 4px;
+        padding-left: 4px;
+    }
+
+    .section-one-image+.section-one-image {
+        margin-left: 0;
+    }
+
+    .section-one .section-one-title {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .section-one .section-one-paragraph {
+        padding-right: 11px;
+        padding-left: 11px;
+        margin-top: 27px;
+        font-size: 14px;
+    }
+
+    .section-two {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+    .section-two .section-two-item {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .section-two .section-two-item:first-child {
+        flex-direction: column-reverse;
+    }
+
+    .section-two .section-two-item:nth-child(2) .item-text {
+        padding: 20px 18px;
+    }
+
+    .section-two .section-two-item .item-text {
+        padding: 34px 18px 42px;
+        margin-bottom: 8px;
+        border-radius: 16px;
+    }
+
+    .section-two .section-two-item .item-text .item-text-title {
+        margin-top: auto;
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .section-two .section-two-item .item-text .item-text-sub-title {
+        font-size: 18px;
+        margin-top: 16px;
+    }
 }
